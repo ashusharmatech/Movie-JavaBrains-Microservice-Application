@@ -9,6 +9,7 @@
         <module name="rating-data-service" />
         <module name="movie-catalog-service" />
         <module name="discovery-server" />
+        <module name="spring-security-jwt" />
         <module name="movie-info-service" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="movie-info-service" target="11" />
       <module name="Movie-JavaBrains-Microservice-Application" target="1.5" />
       <module name="rating-data-service" target="11" />
+      <module name="spring-security-jwt" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -26,6 +28,7 @@
       <module name="movie-catalog-service" options="-parameters" />
       <module name="movie-info-service" options="-parameters" />
       <module name="rating-data-service" options="-parameters" />
+      <module name="spring-security-jwt" options="-parameters" />
     </option>
   </component>
 </project>

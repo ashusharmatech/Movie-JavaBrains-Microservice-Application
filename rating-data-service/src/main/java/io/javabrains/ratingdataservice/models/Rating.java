@@ -1,8 +1,36 @@
 package io.javabrains.ratingdataservice.models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Rating {
-    private final String movieId;
-    private final int rating;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    private String movieId;
+
+    private int rating;
+
+    public Rating() {
+    }
+
+    public Rating(String movieId, int rating) {
+        this.movieId = movieId;
+        this.rating = rating;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getMovieId() {
         return movieId;
@@ -12,9 +40,4 @@ public class Rating {
         return rating;
     }
 
-    public Rating(String movieId, int rating) {
-
-        this.movieId = movieId;
-        this.rating = rating;
-    }
 }

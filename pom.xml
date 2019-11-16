@@ -14,5 +14,6 @@
 		<module>movie-info-service</module>
 		<module>rating-data-service</module>
 		<module>discovery-server</module>
+		<module>spring-security-jwt</module>
 	</modules>
 </project>
